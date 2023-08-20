@@ -9,7 +9,7 @@ export function setUpWorker(): Worker {
 
   const worker = new Worker(config.queue.name, processorFile, {
     connection: { ...config.redis },
-    autorun: false,
+    autorun: true,
     useWorkerThreads: true,
     concurrency: 2,
   });
