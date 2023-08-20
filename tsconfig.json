@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "ts-node": {
+    "esm": true,
+    "swc": false
+  },
+  "exclude": ["node_modules", "tsup.*", "dist"],
+  "include": ["src"]
+}

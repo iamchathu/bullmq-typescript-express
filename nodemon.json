@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json.schemastore.org/nodemon",
+  "watch": ["src"],
+  "ext": "*.{ts|json}",
+  "colours": true,
+  "exec": "SWCRC=true node --loader @swc-node/register/esm src/index.ts",
+  "env": {
+    "SWCRC": true
+  }
+}
