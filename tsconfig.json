@@ -7,6 +7,6 @@
     "esm": true,
     "swc": false
   },
-  "exclude": ["node_modules", "tsup.*", "dist"],
+  "exclude": ["**/node_modules", "**/.*/", "tsup.*", "dist"],
   "include": ["src"]
 }
